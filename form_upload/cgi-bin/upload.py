@@ -24,7 +24,6 @@ try:
     form = cgi.FieldStorage()
     file_items = form['files[]']
 except KeyError:
-    location = "http://localhost/no_files_attrib_error.html"
     headers = "Content-type: text/html"
     body = "<p>Form does contain a 'files[]' field<p>"
 else:
